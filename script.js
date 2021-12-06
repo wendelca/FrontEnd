@@ -27,7 +27,7 @@ function gravarUsuario() {
         msg = this.responseText;
         alert(msg);
         atualizarTabela();
-        if (msg.substring(0, 0) == 'Ok') {
+        if (msg.substring(0, 2) == 'Ok') {
             limparCampos();
         }
     }
@@ -76,7 +76,7 @@ function carregarPagina(pg) {
     document.getElementById("tbCorpo").innerHTML = texto;
 }
 function carregarUsuario(i) {
-    // console.log(lsUsuario[i]);
+     //console.log(lsUsuario[i]);
     u = lsUsuario[i];
     document.getElementById("id").value = u.id;
     document.getElementById("nome").value = u.nome;
